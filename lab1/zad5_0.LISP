@@ -1,0 +1,5 @@
+(defun zbir (lista)
+            (cond((null lista) '0)
+                 (t(+  (car lista) (zbir(cdr lista))))
+            )
+)

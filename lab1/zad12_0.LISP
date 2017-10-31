@@ -1,0 +1,6 @@
+(defun dodajs(el lista)
+       (cond((null (car lista)) (append lista (cons el '())))
+            ((> el (car lista))  (append(cons(car lista)'())(dodajs el (cdr lista))))
+            ((< el (car lista))  (append(cons el '()) lista))
+       )
+)

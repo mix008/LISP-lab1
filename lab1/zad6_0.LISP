@@ -1,0 +1,5 @@
+(defun prebroj(lista)
+       (cond((null lista) lista)
+            (t(append(cons(length (car lista))'())(prebroj(cdr lista))))
+       )
+)

@@ -1,0 +1,6 @@
+(defun getatoms(lista)
+  (cond((null lista) lista) 
+       ((atom(car lista)) (append(cons(car lista) '())(getatoms(cdr lista))))
+       ((not(atom(car lista))) (append '() (getatoms(cdr lista))))
+   )
+)

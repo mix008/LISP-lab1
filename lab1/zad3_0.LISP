@@ -1,0 +1,5 @@
+(defun duzina (lista)
+       (cond((null lista) '0)
+            (t(1+(duzina(cdr lista))))
+        )
+)

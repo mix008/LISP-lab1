@@ -1,0 +1,5 @@
+(defun parnost(lista)
+       (cond((= (mod(length(remove '0 lista))2) 0) '0)
+            (t '1)
+       )
+)

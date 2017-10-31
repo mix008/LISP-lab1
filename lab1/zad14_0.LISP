@@ -1,0 +1,6 @@
+(defun brparni(lista)
+       (cond((null lista) '0)
+            ((= (mod (car lista) 2) 0) (+ 1 (brparni (cdr lista))))
+            ((= (mod (car lista) 2) 1) (+ 0 (brparni (cdr lista))))
+       )
+)

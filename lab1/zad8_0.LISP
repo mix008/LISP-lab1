@@ -1,0 +1,5 @@
+(defun neparnepozicije(lista)
+       (cond((null lista) lista)
+            ((not(null lista)) (append (cons(car lista)'()) (neparnePozicije(cddr lista))))
+       )
+)

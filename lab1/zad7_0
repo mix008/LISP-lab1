@@ -1,0 +1,6 @@
+(defun promeni(n lista)
+       (cond((null lista) lista)
+            ((> n 0) (append(cons(+ (car lista) 1)'())(promeni (- n 1) (cdr lista))))
+            ((= n 0) (append(cons(- (car lista) 1)'())(promeni n (cdr lista))))
+       )
+)

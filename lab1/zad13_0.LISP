@@ -1,0 +1,6 @@
+(defun razmeni(lista)
+       (cond((= (length lista) 1) lista)
+            ((< (car lista) (cadr lista))         (append(cons(cadr lista)'())(razmeni (append(cons(car lista)'())(cddr lista)))))
+            ((not(< (car lista) (cadr lista)))    (append(cons(car lista)'())(razmeni (cdr lista))))
+       )
+)

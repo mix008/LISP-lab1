@@ -1,0 +1,4 @@
+(defun div(x y)(/(- x (mod x y)y)))
+
+(defun prevedi(broj)
+       (

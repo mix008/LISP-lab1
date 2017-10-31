@@ -1,0 +1,7 @@
+(defun asoc(lista)
+       (cond((null lista) t)
+            ((atom (car lista)) '())
+            ((= (length(car lista)) 2) (asoc(cdr lista)))
+            ((not(= (length(car lista)) 2)) '())
+       )
+)

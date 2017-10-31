@@ -1,0 +1,6 @@
+(defun bitparnosti(lista)
+       (cond((null lista) '0)
+            ((= (car lista) 1) (mod(+ 1 (bitparnosti (cdr lista)))2))
+            ((= (car lista) 0) (mod(+ 0 (bitparnosti (cdr lista)))2))
+       )
+)

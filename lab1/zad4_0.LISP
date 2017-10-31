@@ -1,0 +1,6 @@
+(defun pozitivni(lista)
+       (cond((null lista) lista)
+            ((< (car lista) 0) (append '() (pozitivni(cdr lista))))
+            ((not(< (car lista) 0)) (append (cons(car lista)'()) (pozitivni(cdr lista))))
+       )
+)
