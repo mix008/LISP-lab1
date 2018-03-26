@@ -1,0 +1,6 @@
+(defun brpon(pom lista)
+       (cond((null lista) '())
+            ((equal (car lista) (cadr lista)) (brpon (+ 1 pom) (cdr lista))) 
+            ((not(equal (car lista) (cadr lista))) (append(cons (+ pom 1) '())(brpon 0(cdr lista))))
+       )
+)

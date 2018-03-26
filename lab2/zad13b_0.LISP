@@ -1,0 +1,6 @@
+(defun pro(lista)
+       (cond((null lista) 1)
+            ((atom (car lista)) (* (car lista) (pro (cdr lista))))
+            ((listp(car lista)) (* (pro (car lista)) (pro (cdr lista))))
+       )
+)

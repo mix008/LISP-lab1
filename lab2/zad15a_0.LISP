@@ -1,0 +1,6 @@
+(defun simetrican(pom lista)
+       (cond((< (length pom)(length lista)) (simetrican (append(cons(car lista)'())pom)(cdr lista)))
+            ((and(= (length pom)(length lista))(equal pom lista)) T) 
+            ((and(> (length pom)(length lista))(equal (cdr pom) lista)) T) 
+       )
+)

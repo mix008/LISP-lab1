@@ -1,0 +1,6 @@
+(defun ost(lis1 lis2)
+       (cond((null lis1) '())
+            ((equal (member (car lis1) lis2) '()) (append(cons(car lis1)'())(ost (cdr lis1) lis2)))
+            ((not(equal (member (car lis1) lis2) '())) (append '() (ost (cdr lis1) lis2)))
+       )
+)

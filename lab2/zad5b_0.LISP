@@ -1,0 +1,7 @@
+(defun clanp(el lista)
+       (cond((null lista) '())
+            ((equal el (car lista)) t)
+            ((and(not(equal el (car lista)))(listp (car lista))) (or(clanp el (car lista)) (clanp el (cdr lista))))
+            ((not(equal el (car lista))) (or '() (clanp el (cdr lista))))
+       )
+)

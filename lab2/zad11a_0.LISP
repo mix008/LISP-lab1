@@ -1,0 +1,5 @@
+(defun palindrom(lista)
+       (cond((equal (length lista) 1) lista)
+            (t(append lista (cdr(reverse lista))))
+       )
+)

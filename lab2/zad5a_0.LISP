@@ -1,0 +1,6 @@
+(defun kljucevi(aso)
+       (cond((null aso) '())
+            ((atom (caar aso))(append(cons(caar aso)'())(kljucevi (cdr aso))))
+            ((listp (caar aso))(cons (caar aso) (kljucevi (cdr aso))))
+       )
+)

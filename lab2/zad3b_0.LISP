@@ -1,0 +1,7 @@
+(defun brdrugih(br lista)
+       (cond((null lista) 0)
+            ((atom (car lista)) (+ 0 (brdrugih br (cdr lista))))
+            ((and (listp (car lista)) (> (length(car lista)) (- br 1))) (+(+ 1 (brdrugih br (cdr lista)))(brdrugih br (car lista))))
+            ((and (listp (car lista)) (not(>(length(car lista)) (- br 1)))) (+ 0 (brdrugih br (cdr lista))))
+       )
+)

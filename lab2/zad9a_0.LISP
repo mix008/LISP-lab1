@@ -1,0 +1,6 @@
+(defun uporedi(aso)
+       (cond((null aso) '0)
+            ((> (caar aso)(cadar aso)) (+ 1 (uporedi (cdr aso))))
+            ((not(> (caar aso) (cadar aso))) (+ 0 (uporedi (cdr aso))))
+       )
+)

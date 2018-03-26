@@ -1,0 +1,5 @@
+(defun napravi(kljucevi vrednosti)
+       (cond((not(null vrednosti)) (cons(list (car kljucevi) (car vrednosti))(napravi (cdr kljucevi) (cdr vrednosti))))
+            ((and(null vrednosti)(not(null kljucevi))) (cons(cons (car kljucevi) '())(napravi (cdr kljucevi) vrednosti)))
+       )
+)
